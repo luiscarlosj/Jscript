@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro programa...</title>
+
+    <style>
+        body{
+            background-color: rgb(49, 49, 78);
+            color: white;
+            font: normal 20pt Arial;
+
+        }
+
+        h1{
+            color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+  <h1>Olá mundo!</h1>
+
+  <p>Testando meu primeiro programa</p>
+
+  <script> 
+    var n1 = window.prompt('digite um número ')
+    var n2 = window.prompt('digite outro número ')
+
+    var s = parseInt(n1) + parseInt(n2)
+    //tem que fazer a concatenação antes porque windows.prompt retorna uma string
+
+    window.alert('a soma é ' + s)
+
+    var n3 = Number.parseInt(window.prompt('digite um número '))
+    var n4 = Number.parseInt(window.prompt('digite outro número '))
+    //se fosse par float usa-se Number.parseFloat()
+    //ou simplesmente Number(n)
+
+    var z = n3 + n4
+
+    window.alert('a soma é ' + z)
+
+    // number + number para adição
+    // string + string para concatenação
+
+    //de numero para string usa-se String(n) ou n.toString()
+
+    var nome = window.prompt('digite um nome')
+
+    window.alert('seu nome é ' +nome)  //template string
+
+    window.alert('seu nome é '+ nome.length)    
+     
+    window.alert('seu nome é '+ nome.toUpperCase())    
+
+    window.alert('seu nome é ' + nome.toLowerCase()) 
+
+
+
+
+  </script>
+
+</body>
+
+</html>
