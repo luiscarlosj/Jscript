@@ -30,20 +30,27 @@
 
   <script> 
     
+    var n = 10;
 
-    var nome = window.prompt('digite um nome')
-
-    window.alert('seu nome é ' +nome)  //template string
-
-    //window.alert('seu nome é '+ nome.length) 
+    document.writeln('\nValor de n ' + n +'   ')
     
-    document.writeln('\nSeu nome tem ' + nome.length + ' letras\n')
-    //window.alert('seu nome é '+ nome.toUpperCase())  
-    
-    document.writeln('\nSeu nome maiusculo ' + nome.toUpperCase())
-    //window.alert('seu nome é ' + nome.toLowerCase()) 
+    document.writeln('\nValor de n ' + n++ +'   ')
 
-    document.writeln('\nSeu nome minusculo ' + nome.toLowerCase())
+    document.writeln('\nValor de n ' + ++n +'   ')
+
+    document.writeln('\nValor de n ' + n +'   ')
+
+    var x = n % 2 == 0 ? 1 : 0
+    
+    document.writeln('\nValor de x ' + x +'   ') 
+
+    var y = 4 > 2 && 3 < 0
+    
+    document.writeln('\nValor de x ' + y +'   ')
+
+    var z = 4 > 2 || 3 < 0
+    
+    document.writeln('\nValor de x ' + z +'   ')
 
   </script>
 

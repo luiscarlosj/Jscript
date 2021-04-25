@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: blue;
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div class='msg' id='msg' name='msg'>Clique em mim</div>
+    <div id='msg1' name='msg1'>Clique em mim2</div>
+    <div class='msg2' id='msg2' name='msg2'>Clique em mim3</div>
+    <div class='msg3' id='msg3' name='msg3'>Clique em mim3</div>
+
+    <script>
+         window.document.write('Olá mundo');
+         document.write ("<br>");
+
+         window.document.write(window.document.URL);
+         document.write ("<br>");
+
+         window.document.write(window.document.charset + '<br>');
+
+         var p1 = window.document.getElementsByTagName('p')[1]
+
+         window.document.write('Escrito ' + p1.innerText + '<br>')
+
+         window.document.write('Escrito ' + p1.innerHTML)
+
+         p1.style.color = 'yellow'
+
+         var corpo = window.document.body
+
+         corpo.style.background = 'black'
+        
+         //por id ; 
+         var p2 = window.document.getElementById('msg')
+
+         p2.style.background = 'green'
+
+         p2.innerText = 'Estou aguardando...'
+         
+         //por nome
+         var p3 = window.document.getElementsByName('msg1')[0]
+
+         p3.style.background = 'green'
+
+         p3.innerText = 'Estou aguardando2...'
+
+        //por class; 
+        var p4 = window.document.getElementsByClassName('msg2')[0]
+
+        p4.style.background = 'yellow'
+
+        p4.innerText = 'Estou aguardando3...'
+
+        //por selector; quando id posso usar #; quando class posso usar .
+        var p5 = window.document.querySelector('div.msg3')
+
+        p5.style.background = 'blue'
+
+        p5.innerText = 'Estou aguardando3...'
+
+
+    </script>
+
+</body>
+</html>
