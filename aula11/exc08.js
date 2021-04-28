@@ -21,3 +21,4 @@ if (país == 'Brasil'){
     console.log('Estrangeiro')
 }
 
+//habilita a extensão Node.js, escreve o codigo .js e aperta tecla f8
