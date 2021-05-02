@@ -25,20 +25,21 @@
 
    <p>
        Sexo: 
-       <input type="radio" name='radsexo' id='masc' checked>
+       <input type="radio" name='radsex' id='masc' checked>
        <label for="masc">Masculino</label>
 
-       <input type="radio" name='radsexo' id='fem'>
+       <input type="radio" name='radsex' id='fem'>
        <label for="fem">Feminino</label>
+       <!--quando usar radio, o name tem que ser igual para evitar que todos sejam maarcados-->
    </p>
 
    <p>
-      <input type="button" value='verificar'>
+      <input type="button" value='verificar' onclick="verificar()">
    </p>
 
 </div>
 
-<div id='resultado'>
+<div id='res'>
    Preencha os dados acima para ver os resultados
 </div>
 
