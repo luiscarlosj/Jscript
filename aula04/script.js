@@ -32,6 +32,12 @@ console.log(book.fat)
 console.log(book["topic"])
 console.log(book["fat"])
 
+book.teste="teste1"
+
+console.log(book["teste"])
+
+
+
 
 
 
